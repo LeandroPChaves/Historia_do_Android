@@ -89,6 +89,11 @@ p > a{
     font-weight: bolder;
     text-decoration: none;
     background-image: linear-gradient(to right, #83E1AD, #A9EAC6);
+    
+}
+
+p > a::after{
+    content: "\1F517";
 }
 
 .imagem{
@@ -105,13 +110,14 @@ h2{
 
 p{
     text-indent: 10px;
-    margin: 15px 0;
+    margin: 15px 0px;
     text-align: justify;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 14px;
+    line-height: 2em;
 }
 
-h3{
+h3{ 
     font-family: 'IDroid' ;
     color: #1A5C37;
     font-weight: normal; 
@@ -148,10 +154,15 @@ main > .video{
 }
 
 .versaoAndroid{
-    display: inline-block;
-    width: 49%;
+    /* Para mudar o símbolo da lista. Site Emoji Pedia, selecionei o Check, peguei o código dele que é 2714 e o 00A0 eu usei como espaço entre o check e a lista */
+    list-style-type: "\2714\00A0\00A0";
+    list-style-position: inside;
+    columns: 2;
     font-size: 13px;
+
 }
+
+
 
 #subTituloFinal{
     background-color: #1A5C37;
@@ -159,10 +170,10 @@ main > .video{
     color: white;
     font-family: Arial, Helvetica, sans-serif;
     border-radius:5px 5px 0 0;
-    width: 103.5%;
-    margin: -1.6% 0 0 -2.4%;
+    width: 103.4%;
+    margin: -1.6% 0 0 -2.2%;
     padding: 10px 5px;
-    box-shadow: 1px 1px 1px #dad2b600
+    box-shadow: 1px 1px 1px #dad2b600;
 }
 
 .fraseFinal{
